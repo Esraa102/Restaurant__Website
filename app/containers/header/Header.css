@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .book {
+    @apply py-2 px-4 bg-mainColor rounded-md text-black text-sm lg:text-lg;
+  }
+}
+

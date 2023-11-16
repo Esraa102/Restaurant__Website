@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about {
+  background-image: url("../../assets/malik-skydsgaard-jY9rX-E7ztU-unsplash 1 (1).png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .content {
+    direction: ltr;
+  }
+}

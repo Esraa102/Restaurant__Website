@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .subscribe {
+    @apply bg-[#0C0B08]   text-center border border-mainColor w-full  lg:w-[80%] mx-auto absolute top-0 left-1/2 -translate-x-1/2;
+    box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+  }
+  .input {
+    @apply w-full lg:w-[80%] p-4 border border-mainColor bg-transparent rounded-none   focus:outline-none text-mainColor text-lg placeholder:text-mainColor placeholder:font-mainFont placeholder:text-xl;
+  }
+  .foot {
+    @apply flex gap-6 items-center lg:items-start justify-between w-full   flex-col lg:flex-row;
+  }
+}

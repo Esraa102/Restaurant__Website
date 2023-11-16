@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .link {
+    @apply py-2 px-2 hover:bg-mainColor rounded-md hover:text-black transition duration-300;
+  }
+  .large-nav {
+    @apply hidden items-center gap-6 lg:flex;
+  }
+  .mobile-nav {
+    @apply flex items-center lg:hidden flex-col absolute gap-6  w-[85%] top-[80px] left-1/2 -translate-x-1/2  bg-[#0C0C0C] p-4;
+  }
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .box {
+    @apply w-[250px] h-[400px]  inline-block mx-2 relative  cursor-pointer;
+  }
+  .img {
+    @apply border border-mainColor    w-full h-full object-cover;
+  }
+  .boxlayer {
+    @apply absolute top-0 left-0 w-full h-full bg-[#000000ba] flex items-center justify-center;
+  }
+}
+.gallery-images::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    width: 100%;
+  }
+}
+.layer {
+  opacity: 0;
+  transition: 0.3s;
+}
+.imageBox:hover .layer {
+  opacity: 1;
+}
